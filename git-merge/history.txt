@@ -1,0 +1,17 @@
+
+    1  cd ~/Desktop/HW12-11
+    2  git clone git@github.com:KarynaRudiak/git-merge.git
+    3  cd git-merge
+    4  git checkout -b feature\n
+    5  echo "# New Repo" > README.md
+    6  echo "# Ignore logs" >> .gitignore
+    7  ls -al
+    8  git add .
+    9  git commit -m "Added README.md and updated .gitignore"
+   10  git push -u origin feature\n
+   11  git log
+   12  git commit --amend -m "Added README.md and updated .gitignore ammend"
+   13  git log
+   14  git push --force\n
+   15  git checkout main\n
+   16  git merge feature\n
